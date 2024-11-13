@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: rgb(214, 24, 24);
+}
+#navbar nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 30px;
+  font-size: 30px;
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+}
+#navbar ul a {
+  text-decoration: none;
+}
+
+nav:hover {
+  color: black;
+}
+
+#home {
+  height: 100vh;
+  overflow: hidden;
+}
+#home .imagediv {
+  position: relative;
+}
+#home .textdiv {
+  position: absolute;
+  top: 0;
+  margin-top: 230px;
+  margin-left: 90px;
+}
+#home .textdiv .heading2 {
+  color: white;
+  font-size: 100px;
+  margin-top: 20px;
+}
+#home .textdiv h1 {
+  font-size: 80px;
+}
+#home .textdiv p {
+  font-size: 20px;
+  color: white;
+}
+#home .button1 {
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+#home .button1:hover {
+  border: 1px solid black;
+  background-color: brown;
+  color: black;
+}
+
+#about .maincontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#about .textdiv1 {
+  margin: 180px;
+}
+#about .textdiv1 h1 {
+  font-size: 60px;
+  color: rgb(247, 11, 11);
+}
+#about .textdiv1 p {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#about .imgdiv1 {
+  margin-top: 120px;
+  margin-right: 150px;
+}
+#about .button2 {
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+#about .button2:hover {
+  border: 1px solid black;
+  background-color: brown;
+  color: black;
+}
+
+#gallary .gallarytext {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#gallary .gallarytext h1 {
+  margin-left: 600px;
+  font-size: 40px;
+  color: brown;
+}
+#gallary .gallarytext p {
+  font-size: 30px;
+  margin-top: 30px;
+}
+#gallary .imagediv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
+#gallary .imagediv img {
+  width: 500px;
+  height: 350px;
+  margin-top: 50px;
+}
+#gallary .button3 {
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+  margin-left: 760px;
+}
+#gallary .button3:hover {
+  border: 1px solid black;
+  background-color: brown;
+  color: black;
+}
+
+#service .mainimg {
+  position: relative;
+}
+#service .textcontainer {
+  position: absolute;
+  top: 0;
+  margin-top: 300px;
+  margin-left: 230px;
+}
+#service .textcontainer h1 {
+  font-size: 50px;
+  color: white;
+}
+#service .textcontainer p {
+  color: white;
+  font-size: 20px;
+}
+#service .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  overflow: hidden;
+  gap: 50px;
+}
+#service .boxcontainer .container1 {
+  height: 400px;
+  padding: 50px;
+  width: 400px;
+  border: 1px solid black;
+  background-color: brown;
+}
+#service .boxcontainer .container2 {
+  height: 400px;
+  padding: 30px;
+  width: 400px;
+  border: 1px solid black;
+  background-color: brown;
+}
+#service .boxcontainer .container3 {
+  height: 400px;
+  padding: 30px;
+  width: 400px;
+  border: 1px solid black;
+  background-color: brown;
+}
+
+#contact h1 {
+  font-size: 30px;
+  color: brown;
+  margin-top: 150px;
+  margin-left: 800px;
+}
+#contact .contactimage {
+  position: relative;
+  margin-top: 60px;
+}
+#contact .contacttext {
+  position: absolute;
+  top: 0;
+}
+#contact .form1 input {
+  font-size: 40px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding-left: 200px;
+}
+#contact .button4 {
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+#contact .button4:hover {
+  border: 1px solid black;
+  background-color: brown;
+  color: black;
+}
+
+@media (max-width: 450px) {
+  #navbar li {
+    display: none;
+  }
+  #navbar h1 {
+    font-size: 25px;
+  }
+  #home .imagediv img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  #home .textdiv .heading1 {
+    font-size: 50px;
+    margin-top: -30px;
+  }
+  #home .textdiv .heading2 {
+    font-size: 40px;
+    margin-top: 25px;
+  }
+  #home .button1 {
+    font-size: 20px;
+  }
+  #check:checked ~ #navbar {
+    display: block;
+  }
+  #about {
+    overflow: hidden;
+  }
+  #about .maincontainer {
+    grid-template-columns: 1fr;
+  }
+  #about .maincontainer .textdiv1 {
+    margin-left: 0px;
+  }
+  #about .maincontainer .textdiv1 h1 {
+    font-size: 30px;
+  }
+  #about .maincontainer .imgdiv1 img {
+    height: 100%;
+    width: 500px;
+    margin-top: -150px;
+  }
+  #gallary .button3 {
+    margin-left: 50px;
+  }
+  #gallary .gallarytext h1 {
+    margin-left: -30px;
+  }
+  #gallary .gallarytext p {
+    font-size: 15px;
+    padding: 20px;
+    margin-left: -40px;
+  }
+  #gallary .imagediv {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 400px;
+  }
+  #gallary .imagediv img {
+    width: 100%;
+  }
+  #service .textcontainer h1 {
+    font-size: 30px;
+    margin-left: -100px;
+  }
+  #service .textcontainer p {
+    font-size: 12px;
+    margin-left: -170px;
+  }
+  #service .mainimg img {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+  #service .boxcontainer {
+    margin-left: -210px;
+  }
+  #service .boxcontainer .container1 {
+    height: 200px;
+    width: 300px;
+    margin-top: 0;
+  }
+  #service .boxcontainer .container1 img {
+    height: 30px;
+    width: 30px;
+    margin-left: 70px;
+  }
+  #service .boxcontainer .container1 h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  #service .boxcontainer .container1 p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  #service .boxcontainer .container2 {
+    height: 200px;
+    width: 300px;
+  }
+  #service .boxcontainer .container2 .img {
+    height: 10px;
+    width: 10px;
+  }
+  #service .boxcontainer .container2 h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  #service .boxcontainer .container2 p {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

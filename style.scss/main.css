@@ -188,12 +188,13 @@ nav:hover {
 #contact h1 {
   font-size: 30px;
   color: brown;
-  margin-top: 150px;
+  margin-top: 130px;
   margin-left: 800px;
 }
 #contact .contactimage {
   position: relative;
   margin-top: 60px;
+  margin-left: 300px;
 }
 #contact .contacttext {
   position: absolute;
@@ -213,6 +214,7 @@ nav:hover {
   color: white;
   margin-top: 20px;
   padding: 20px;
+  margin-left: 700px;
 }
 #contact .button4:hover {
   border: 1px solid black;
@@ -252,11 +254,20 @@ nav:hover {
   #about .maincontainer {
     grid-template-columns: 1fr;
   }
+  #about .maincontainer .button2 {
+    font-size: 30px;
+    margin-left: 100px;
+  }
   #about .maincontainer .textdiv1 {
+    margin-top: 120px;
     margin-left: 0px;
   }
   #about .maincontainer .textdiv1 h1 {
     font-size: 30px;
+    text-align: center;
+  }
+  #about .maincontainer .textdiv1 p {
+    font-size: 20px;
   }
   #about .maincontainer .imgdiv1 img {
     height: 100%;
@@ -264,10 +275,10 @@ nav:hover {
     margin-top: -150px;
   }
   #gallary .button3 {
-    margin-left: 50px;
+    margin-left: 110px;
   }
   #gallary .gallarytext h1 {
-    margin-left: -30px;
+    margin-left: -27px;
   }
   #gallary .gallarytext p {
     font-size: 15px;
@@ -277,7 +288,7 @@ nav:hover {
   #gallary .imagediv {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 400px;
+    margin-top: 40px;
   }
   #gallary .imagediv img {
     width: 100%;
@@ -300,7 +311,7 @@ nav:hover {
   }
   #service .boxcontainer .container1 {
     height: 200px;
-    width: 300px;
+    width: 400px;
     margin-top: 0;
   }
   #service .boxcontainer .container1 img {
@@ -318,11 +329,12 @@ nav:hover {
   }
   #service .boxcontainer .container2 {
     height: 200px;
-    width: 300px;
+    width: 400px;
   }
-  #service .boxcontainer .container2 .img {
-    height: 10px;
-    width: 10px;
+  #service .boxcontainer .container2 img {
+    height: 40px;
+    width: 40px;
+    margin-left: 70px;
   }
   #service .boxcontainer .container2 h1 {
     font-size: 20px;
@@ -331,5 +343,31 @@ nav:hover {
   #service .boxcontainer .container2 p {
     font-size: 10px;
     margin-left: 20px;
+  }
+  #service .boxcontainer .container3 {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  #service .boxcontainer .container3 img {
+    height: 40px;
+    width: 40px;
+    margin-left: 70px;
+  }
+  #service .boxcontainer .container3 h1 {
+    margin-left: 30px;
+    font-size: 22px;
+  }
+  #service .boxcontainer .container3 p {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  #contact h1 {
+    margin-left: 150px;
+  }
+  #contact .contactimage {
+    margin-left: 0;
+    height: 100px;
+    width: 100px;
   }
 }/*# sourceMappingURL=main.css.map */
